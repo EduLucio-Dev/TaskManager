@@ -48,13 +48,28 @@ void PreencheEstoque()
 
     Console.WriteLine("Lista de produtos em Estoque:");
 
-    for (int i = 0; i < quantidadeProduto; i++)
+    for (int contagem = 0;contagem < quantidadeProduto; contagem++)
     {
-        Console.WriteLine($"{i + 1}. {nomeProduto}");
+        Console.WriteLine($"{contagem + 1}. {nomeProduto} - for");
     }
 
+    int contagemDo;
+    contagemDo = 0;
 
+    do
+    {
+        Console.WriteLine($"{contagemDo +1}. {nomeProduto} - do while");
+        contagemDo++;
+    } while (contagemDo < quantidadeProduto);
 
+    int contagemWhile;
+    contagemWhile = 0;
+
+    while (contagemWhile < quantidadeProduto)
+    {
+        Console.WriteLine($"{contagemWhile +1}. {nomeProduto} - while");
+        contagemWhile++;
+    }
 
 
 }
